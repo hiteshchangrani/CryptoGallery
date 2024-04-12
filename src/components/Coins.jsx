@@ -86,10 +86,12 @@ const Coins = () => {
         <div
       style={{
         display: 'flex',
+        overflowX:'auto',
         justifyContent: 'center',
         boxSizing: 'border-box',
         width: '100%',
         margin:'auto',
+        marginBottom:'8px',
         height: '15%',
       }}
     >
@@ -97,10 +99,10 @@ const Coins = () => {
       <ReactPaginate
         activeClassName={'item active '}
         breakClassName={'item break-me '}
-        breakLabel={'...'}
+        breakLabel={'..'}
         containerClassName={'pagination'}
         disabledClassName={'disabled-page'}
-        marginPagesDisplayed={4}
+        marginPagesDisplayed={1}
         nextClassName={"item next "}
         nextLabel={<IoIosArrowForward onClick={()=>handleNext()} style={{ fontSize: 18, width: 150 }} />}
         onPageChange={(e) => handlePageClick(e)}
