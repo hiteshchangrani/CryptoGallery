@@ -2,29 +2,29 @@ import React from 'react'
 import { ImFacebook2 } from "react-icons/im";
 import { FaInstagram,FaRedditAlien,FaDiscord,FaTelegram } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
-import { Box, VStack, HStack, Text } from '@chakra-ui/react'
+import { Box,Stack, VStack, HStack, Text } from '@chakra-ui/react'
 import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
   return (
-    <VStack color={"whitesmoke"} bgColor={"blackAlpha.900"} w={"full"} minH={"50"} px={"16"} py={["12", "6"]} spacing={"8"}>
-      <HStack justifyContent={"space-between"} w={"full"}>
+    <VStack color={"whitesmoke"} bgColor={"blackAlpha.900"} w={"full"} minH={"50"} px={["4","16"]} py={["12", "6"]} spacing={"8"}>
+      <Stack justifyContent={"space-between"} alignItems={["center",""]} flexDirection={["column","row"]} w={"full"} spacing={"4"}>
         <HStack spacing={"4"}>
-          <Text fontSize={"24"}>Follow Us:</Text>
+          <Text fontSize={["16","24"]}>Follow Us:</Text>
           <a href="https://www.facebook.com" target='_blank'><ImFacebook2 fontSize={"24"} color={"invert(1"} /></a>
           <a href="https://www.instagram.com" target='_blank'><FaInstagram fontSize={"24"} color={"invert(1"} /></a>
           <a href="https://www.twitter.com" target='_blank'><FaSquareXTwitter fontSize={"24"} color={"invert(1"} /></a>
         </HStack>
-        <HStack spacing={"4"}>
-        <Text fontSize={"24"}>Connect with the Community:</Text>
+        <HStack spacing={"4"} >
+        <Text fontSize={["16","24"]}>Connect with the Community:</Text>
           <a href="https://www.facebook.com" target='_blank'><FaRedditAlien fontSize={"24"} color={"invert(1"} /></a>
           <a href="https://www.instagram.com" target='_blank'><FaDiscord fontSize={"24"} color={"invert(1"} /></a>
           <a href="https://www.twitter.com" target='_blank'><FaTelegram fontSize={"24"} color={"invert(1"} /></a>
         </HStack>
-      </HStack>
+      </Stack>
 
-      <HStack spacing={"12"}>
+      <HStack spacing={["3","12"]} >
         <Link><Text>•Terms of Service</Text></Link>
         <Link><Text>•Privacy Policy</Text></Link>
         <Link><Text>•About Us</Text></Link>
