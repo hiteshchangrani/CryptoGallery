@@ -2,6 +2,7 @@ import React from 'react'
 import {Box, Image, Text} from '@chakra-ui/react'
 import btcimg from "../assets/btcimg.png"
 import {motion} from 'framer-motion'
+import Footer from './Footer'
 
 const Home = () => {
   return (
@@ -27,7 +28,9 @@ const Home = () => {
       <Text fontSize={["x-large","xxx-large"]} fontWeight={["700","900"]} textAlign={"center"} position={"absolute"} bottom={"8"} left={"50%"} transform={"translateX(-50%)"} color={"whitesmoke"}  >Crypto Canvas</Text>
       
     </Box>
+    
   )
+  
 }
 
 export default Home

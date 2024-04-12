@@ -32,7 +32,7 @@ const Exchanges = () => {
 if(error) return <ErrorComponent message={"Error While Fetching Exchanges"} />
 
   return (
-    <Container maxW={"container.xl"} h={"90vh"} >
+    <Container maxW={"container.xl"}>
       {loading?<Loader/>:<>
         <HStack wrap={"wrap"} justifyContent={"space-evenly"}>
           {

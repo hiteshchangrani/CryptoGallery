@@ -22,9 +22,6 @@ function App() {
         <Route path='/coins/:id' element={<CoinDetails/>} />
       </Routes>
       <Footer/>
-
-
-
     </BrowserRouter>
   );
 }

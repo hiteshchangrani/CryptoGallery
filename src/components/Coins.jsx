@@ -64,7 +64,7 @@ const Coins = () => {
   if (error) return <ErrorComponent message={"Error While Fetching Coins"} />
 
   return (
-    <Container maxW={"container.xl"} h={"90vh"} >
+    <Container maxW={"container.xl"} >
       {loading ? <Loader /> : <>
         
         <RadioGroup value={currency} onChange={setCurrency}>
